@@ -25,7 +25,7 @@ public class TimeSLList {
 
     public static void timeGetLast() {
         // TODO: YOUR CODE HERE
-        int M = 1000;
+        int M = 10000;
         AList<Integer> Ns = new AList<>();
         AList<Double> times = new AList<>();
         AList<Integer> opCounts = new AList<>();
@@ -41,7 +41,7 @@ public class TimeSLList {
             double timeInSeconds = sw.elapsedTime();
             Ns.addLast(N);
             times.addLast(timeInSeconds);
-            opCounts.addLast(N);
+            opCounts.addLast(M);
         }
         printTimingTable(Ns, times, opCounts);
 
